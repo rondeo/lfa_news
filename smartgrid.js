@@ -2,9 +2,9 @@ const smartgrid = require("smart-grid");
 
 const settings = {
   filename: "_smart-grid",
-  outputStyle: "scss" /* less || scss || sass || styl */,
+  outputStyle: "sass" /* less || scss || sass || styl */,
   columns: 12 /* number of grid columns */,
-  offset: "2%" /* gutter width px || % || rem */,
+  offset: "3%" /* gutter width px || % || rem */,
   mobileFirst: false /* mobileFirst ? "min-width" : "max-width" */,
   container: {
     maxWidth: "1160px" /* max-width оn very large screen */,
