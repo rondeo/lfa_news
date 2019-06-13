@@ -8,62 +8,83 @@ $color_legal-education: #ed1c24
 $color_leisure: #e98e05
 $color_test: #e9ce05
 
-/*colors*/
+/*Цвета для текста внутри артикла (Блок "Еще по теме")*/
 
-.article--event
-  border-color: $color_event
-.article--legislation
-  border-color: $color_legislation
-.article--proffesion
-  border-color: $color_profession
-.article--research
-  border-color: $color_research
-.article--case
-  border-color: $color_case
-.article--interview
-  border-color: $color_interview
-.article--legal-education
-  border-color: $color_legal-education
-.article--leisure
-  border-color: $color_leisure
-.article--test
-  border-color: $color_test
-
-.article--event .meta-box__category
+.event-text
   color: $color_event
-.article--legislation .meta-box__category
+.legislation-text
   color: $color_legislation
-.article--proffesion .meta-box__category
+.proffesion-text
   color: $color_profession
-.article--research .meta-box__category
+.research-text
   color: $color_research
-.article--case .meta-box__category
+.case-text
   color: $color_case
-.article--interview .meta-box__category
+.interview-text
   color: $color_interview
-.article--legal-education .meta-box__category
+.legal-education-text
   color: $color_legal-education
-.article--leisure .meta-box__category
+.leisure-text
   color: $color_leisure
-.article--test .meta-box__category
+.test-text
   color: $color_test
 
-.article--event .meta-box__category-color
+/*Цвета для категории артикла (Верхний border, цвет квадрата и категории)*/
+
+.event .article
+  border-color: $color_event
+.legislation .article
+  border-color: $color_legislation
+.proffesion .article
+  border-color: $color_profession
+.research .article
+  border-color: $color_research
+.case .article
+  border-color: $color_case
+.interview .article
+  border-color: $color_interview
+.legal-education .article
+  border-color: $color_legal-education
+.leisure .article
+  border-color: $color_leisure
+.test .article
+  border-color: $color_test
+
+.event .meta-box__category, .event .subscribe__title-highlight
+  color: $color_event
+.legislation .meta-box__category, .legislation .subscribe__title-highlight
+  color: $color_legislation
+.proffesion .meta-box__category, .proffesion .subscribe__title-highlight
+  color: $color_profession
+.research .meta-box__category, .research .subscribe__title-highlight
+  color: $color_research
+.case .meta-box__category, .case .subscribe__title-highlight
+  color: $color_case
+.interview .meta-box__category, .interview .subscribe__title-highlight
+  color: $color_interview
+.legal-education .meta-box__category, .legal-education .subscribe__title-highlight
+  color: $color_legal-education
+.leisure .meta-box__category, .leisure .subscribe__title-highlight
+  color: $color_leisure
+.test .meta-box__category, .test .subscribe__title-highlight
+  color: $color_test
+
+.event .meta-box__category-color
   background-color: $color_event
-.article--legislation .meta-box__category-color
+.legislation .meta-box__category-color
   background-color: $color_legislation
-.article--proffesion .meta-box__category-color
+.proffesion .meta-box__category-color
   background-color: $color_profession
-.article--research .meta-box__category-color
+.research .meta-box__category-color
   background-color: $color_research
-.article--case .meta-box__category-color
+.case .meta-box__category-color
   background-color: $color_case
-.article--interview .meta-box__category-color
+.interview .meta-box__category-color
   background-color: $color_interview
-.article--legal-education .meta-box__category-color
+.legal-education .meta-box__category-color
   background-color: $color_legal-education
-.article--leisure .meta-box__category-color
+.leisure .meta-box__category-color
   background-color: $color_leisure
-.article--test .meta-box__category-color
+.test .meta-box__category-color
   background-color: $color_test
 

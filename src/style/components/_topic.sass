@@ -1,0 +1,65 @@
+.topic
+  padding: 34px 28px 20px
+  background-color: #fff
+  border: 1px solid #d5ad5d
+  box-shadow: 0px 2px 8px 0 rgba(0, 0, 0, 0.11)
+  a
+    text-decoration: none
+  &__title
+    font-size: 2.2rem
+    line-height: 0
+    color: #1d1d1d
+    margin-bottom: 35px
+    font-weight: 700
+  &__item
+    display: block
+    border-bottom: 1px solid #e8e8e8
+    padding-bottom: 48px
+    margin-bottom: 25px
+    &-subtitle
+      font-size: 1.4rem
+      margin-bottom: 10px
+    &-title
+      font-size: 1.6rem
+      color: #1d1d1d
+      font-weight: 700
+      margin-bottom: 15px
+    &:last-child
+      border: none
+      margin-bottom: 0
+      padding-bottom: 38px
+
+  &__btns
+    float: left
+    display: flex
+    justify-content: flex-start
+    margin-right: 0
+    font-size: 1.2rem
+    line-height: 2.2rem
+    color: #8c8c8c
+    text-decoration: none
+    margin-bottom: 20px
+
+  &__btn
+    margin-right: 15px
+    &-icon
+      float: left
+      width: 27px
+      height: 100%
+      background-repeat: no-repeat
+      background-position: center
+      margin-right: 7px
+    &-count
+      float: left
+
+.view .topic__btn-icon
+  background-image: url('../img/svg/impression.svg')
+  background-position-y: 5px
+.like .topic__btn-icon
+  background-image: url('../img/svg/like.svg')
+  background-position-y: 0px
+  width: 23px
+.comment .topic__btn-icon
+  background-image: url('../img/svg/comment.svg')
+  width: 21px
+  background-position-y: 4px

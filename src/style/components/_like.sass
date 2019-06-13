@@ -1,22 +1,66 @@
 .like
   &__wrap 
-    padding: 27px 28px
+    padding: 18px 28px 42px
     background-color: #f4f4f4
     color: #8c8c8c
     font-size: 1.4rem
     line-height: 2.2rem
-    .row-flex()
     a
       color: #8c8c8c
       text-decoration: none
   &__btns
-  
+    float: left
+    display: flex
+    justify-content: flex-start
+    margin-right: 0
+  &__btn
+    margin-right: 15px
+    &-icon
+      float: left
+      width: 25px
+      height: 100%
+      background-repeat: no-repeat
+      background-position: center
+      margin-right: 5px
+    &-count
+      float: left
+      padding-top: 2px
 
   &__share
     float: right
+    
+    &-note
+      float: left
+      margin-right: 10px
+      font-style: italic
+      padding-top: 2px
+    &-icon
+      float: left
+      width: 23px
+      height: 22px
+      background-repeat: no-repeat
+      background-position-y: 0px
+      background-image: url('../img/svg/share.svg')
 
+.view .like__btn-icon
+  background-image: url('../img/svg/impression-artcl-footer.svg')
+  background-position-y: 7px
+.like .like__btn-icon
+  background-image: url('../img/svg/like-artcl-footer.svg')
+  background-position-y: 0px
+  width: 23px
+.comment .like__btn-icon
+  background-image: url('../img/svg/comment-artcl-footer.svg')
+  width: 21px
+  background-position-y: 6px
+.favorites .like__btn-icon
+  background-image: url('../img/svg/favorites-artcl-footer.svg')
+  background-position-y: 2px
+  width: 19px
 
 .blind-label
+  content: ''
+  position: absolute
   opacity: 0
   height: 1px
   width: 1px
