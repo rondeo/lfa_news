@@ -11,7 +11,7 @@
   <body>
     <div class="page-wrapper">
       <div class="row justify-content-md-center">
-        <div class="content-area legislation col-lg-7 col-md-8 col-sd-12">
+        <div class="content-area legislation col-lg-7 col-md-8 col-sm-12 col-12">
           <div class="content">
             <div class="content__item">
               <article class="article">
@@ -27,6 +27,10 @@
                       <div class="meta-box__item meta-box__btn">
                         <button class="btn-outline">подписаться +</button>
                       </div>
+                      <div class="meta-box__item meta-box__mobile-btn">
+                        <button class="btn-outline">+</button>
+                        <span class="blind-label">Подписаться</span>
+                      </div>
                     </div>
                     <div class="meta-box__right meta-box__date">
                       <time class="meta-box__time" datetime="2019-06-10">06 июня 2019</time>
@@ -36,7 +40,7 @@
                   <h2 class="article__title">
                     АС Московского округа исправляет ошибки: самые интересные дела за март
                   </h2>
-                  <span class="article_low-area">
+                  <span class="article__low-area">
                     арбитражный процесс, подборка, вексель
                   </span>
                   <p class="article__description">
@@ -98,6 +102,14 @@
                     <p class="article__main-text">Он согласился с «Магелланом», что у того больше нет процессуальных возможностей выразить несогласие с определением суда первой инстанции.</p>
                     <span class="article__main-border"></span>
                   </div>
+                  <div class="article__banner">
+                    <a href="#" class="article__banner-link">
+                      <picture class="article__banner-img">
+                        <source srcset="img/Banner-live-240х400.png" media="(min-width: 600px)" />
+                        <img src="img/Banner-live-240х400.png" alt="Прямая трансляция ПМЮФ 2019" />
+                      </picture>
+                    </a>
+                  </div>
                   <h3 class="article__subtitle">
                     Зачет векселей – прибыльная операция
                   </h3>
@@ -149,17 +161,17 @@
                   <p class="topic__item-subtitle legal-education-text">#юробразование</p>
                   <p class="topic__item-title">«Право интеллектуальной собственности»</p>
                   <div class="topic__btns">
-                    <div href="#" class="topic__btn view">
+                    <div class="topic__btn view">
                       <div class="topic__btn-icon"></div>
                       <div class="topic__btn-count">12 526</div>
                       <span class="blind-label">Просмотры</span>
                     </div>
-                    <div href="#" class="topic__btn like">
+                    <div class="topic__btn like">
                       <div class="topic__btn-icon"></div>
                       <div class="topic__btn-count">38</div>
                       <span class="blind-label">Нравиться</span>
                     </div>
-                    <div href="#" class="topic__btn comment">
+                    <div class="topic__btn comment">
                       <div class="topic__btn-icon"></div>
                       <div class="topic__btn-count">15</div>
                       <span class="blind-label">Комментарий</span>
@@ -170,17 +182,17 @@
                   <p class="topic__item-subtitle legislation-text">#законодательство</p>
                   <p class="topic__item-title">АС Московского округа исправляет ошибки: самые интересные дела</p>
                   <div class="topic__btns">
-                    <div href="#" class="topic__btn view">
+                    <div class="topic__btn view">
                       <div class="topic__btn-icon"></div>
                       <div class="topic__btn-count">12 526</div>
                       <span class="blind-label">Просмотры</span>
                     </div>
-                    <div href="#" class="topic__btn like">
+                    <div class="topic__btn like">
                       <div class="topic__btn-icon"></div>
                       <div class="topic__btn-count">38</div>
                       <span class="blind-label">Нравиться</span>
                     </div>
-                    <div href="#" class="topic__btn comment">
+                    <div class="topic__btn comment">
                       <div class="topic__btn-icon"></div>
                       <div class="topic__btn-count">15</div>
                       <span class="blind-label">Комментарий</span>
@@ -191,17 +203,17 @@
                   <p class="topic__item-subtitle case-text">#кейсы</p>
                   <p class="topic__item-title">Промсвязьбанк взыскал с кипрской компании более 1,3 млрд рублей</p>
                   <div class="topic__btns">
-                    <div href="#" class="topic__btn view">
+                    <div class="topic__btn view">
                       <div class="topic__btn-icon"></div>
                       <div class="topic__btn-count">12 526</div>
                       <span class="blind-label">Просмотры</span>
                     </div>
-                    <div href="#" class="topic__btn like">
+                    <div class="topic__btn like">
                       <div class="topic__btn-icon"></div>
                       <div class="topic__btn-count">38</div>
                       <span class="blind-label">Нравиться</span>
                     </div>
-                    <div href="#" class="topic__btn comment">
+                    <div class="topic__btn comment">
                       <div class="topic__btn-icon"></div>
                       <div class="topic__btn-count">15</div>
                       <span class="blind-label">Комментарий</span>
@@ -247,7 +259,13 @@
                       </div>
                       <div class="comments__item-main">
                         <p class="comments__item-text">У вас опечатка во втором абзаце</p>
-                        <a href="#" class="comments__item-btn">Ответить</a>
+                        <div class="comments__item-btns">
+                          <a href="#" class="comments__item-btn">Ответить</a>
+                          <div class="comments__mobile-assessment">
+                            <a href=# class="comments__mobile-like"><span>+</span> 3</a>
+                            <a href=# class="comments__mobile-dislike"><span>-</span> 4</a>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div class="comments__item-reply">
@@ -267,7 +285,13 @@
                         </div>
                         <div class="comments__item-main">
                           <p class="comments__item-text">У вас опечатка во втором абзаце</p>
-                          <a href="#" class="comments__item-btn">Ответить</a>
+                          <div class="comments__item-btns">
+                            <a href="#" class="comments__item-btn">Ответить</a>
+                            <div class="comments__mobile-assessment">
+                              <a href=# class="comments__mobile-like"><span>+</span> 3</a>
+                              <a href=# class="comments__mobile-dislike"><span>-</span> 4</a>
+                            </div>
+                          </div>
                         </div>
                       </div>
                       <div class="comments__item-reply">
@@ -285,7 +309,13 @@
                         </div>
                         <div class="comments__item-main">
                           <p class="comments__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                          <a href="#" class="comments__item-btn">Ответить</a>
+                          <div class="comments__item-btns">
+                            <a href="#" class="comments__item-btn">Ответить</a>
+                            <div class="comments__mobile-assessment">
+                              <a href=# class="comments__mobile-like"><span>+</span> 3</a>
+                              <a href=# class="comments__mobile-dislike"><span>-</span> 4</a>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -306,7 +336,13 @@
                       </div>
                       <div class="comments__item-main">
                         <p class="comments__item-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-                        <a href="#" class="comments__item-btn">Ответить</a>
+                        <div class="comments__item-btns">
+                          <a href="#" class="comments__item-btn">Ответить</a>
+                          <div class="comments__mobile-assessment">
+                            <a href=# class="comments__mobile-like"><span>+</span> 3</a>
+                            <a href=# class="comments__mobile-dislike"><span>-</span> 4</a>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>

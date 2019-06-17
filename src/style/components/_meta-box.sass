@@ -44,6 +44,31 @@
     float: right
     font-size: 1.4rem
     color: #8d8d8d
+  &__mobile-btn
+    display: none
+    cursor: pointer
+    & button
+      cursor: pointer
+      background-color: inherit
+      border: 1px solid #cdb863
+      color: #cdb863
+      padding: 6px
+      font-size: 1.6rem
+      line-height: 1rem
+      cursor: pointer
+      outline-width: 2px
+      outline-color: #cdb863
 
-
-
+@media screen and (max-width: 576px) 
+  .meta-box
+    flex-wrap: wrap
+    margin-bottom: 24px
+    &__left
+      width: 100%
+      margin-bottom: 15px
+    &__category
+      font-size: 1.2rem
+    &__mobile-btn
+      display: block
+    &__btn
+      display: none
