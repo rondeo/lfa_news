@@ -50,10 +50,11 @@
     &-header
       display: flex
       justify-content: space-between
-      align-items: bottom
+      align-items: baseline
       margin-bottom: 15px
     &-author
       display: flex
+      align-items: baseline
       justify-content: flex-start
     &-img
       width: 20px
@@ -95,12 +96,12 @@
       color: #b5b5b5
       text-decoration: none
     &-reply
-      padding-left: 30px
+      padding-left: 20px
     &-opener
       display: block
       content: ''
       position: absolute
-      width: 30px
+      width: 20px
       height: 50px
       left: -5px
       background-image: url('../img/svg/arrow-up.svg')
@@ -113,5 +114,81 @@
     line-height: 1.2
     text-decoration: none
     border-bottom: 1px solid #888888
+  &__mobile
+    &-assessment
+      display: none
+
+@media screen and (max-width: 576px)
+  .comments
+    &__item
+      &-author
+        flex-wrap: wrap
+      &-img
+        margin-bottom: 7px
+      &-name
+        font-size: 1.2rem
+        margin-bottom: 7px
+      &-date
+        font-size: 1.2rem
+      &-assessment
+        display: none
+      &-text
+        font-size: 1.4rem
+        margin-bottom: 15px
+      &-reply
+        padding-left: 20px
+      &-opener
+        background-size: 16px
+        width: 20px
+      &-btns
+        display: flex
+        justify-content: flex-start
+        align-items: baseline
+      &-btn
+        margin-right: 5px
+        padding: 2px 13px 4px 12px
+        margin-right: 20px
+        border: 1px solid #8c8c8c
+    &__also
+      justify-content: center
+    &__mobile
+      &-assessment
+        display: block
+      &-like, &-dislike
+        font-size: 1.4rem
+        color: #4bb625
+        line-height: 1
+        & span
+          font-size: 1.6rem
+          padding: 0px 8px 2px
+          border: 1px solid #8c8c8c
+          margin-right: 3px
+      &-like
+        margin-right: 15px
+      &-dislike
+        font-size: 1.4rem
+        color: #ef3939
+        & span
+          padding: 0px 10px 2px
+
+@media screen and (max-width: 480px)
+  .comments
+    &__item
+      &-btn
+        font-size: 1.2rem
+        margin-right: 20px
+    &__mobile
+      &-like, &-dislike
+        font-size: 1.2rem
+        & span
+          font-size: 1.4rem
+          padding: 0px 8px 2px 7px
+      &-like
+        margin-right: 10px
+      &-dislike
+        & span
+          padding: 0px 9px 2px 8px 
+
+
 
 

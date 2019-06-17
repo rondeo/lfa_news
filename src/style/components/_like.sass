@@ -65,3 +65,33 @@
   height: 1px
   width: 1px
   font-size: 0.1rem
+
+@media screen and (max-width: 576px)
+  .like
+    &__wrap 
+      padding: 20px 29px 25px 23px
+      display: flex
+      justify-content: center
+      flex-wrap: wrap
+    &__btns
+      margin-bottom: 25px
+      justify-content: space-between
+      width: 100%
+    &__btn
+      &-count
+        font-size: 1.3rem
+      &-icon
+        width: 20px
+        margin-right: 6px
+      &:last-child
+        margin-right: 0
+  .like .like__btn-icon
+    background-position-y: 3px
+    width: 18px
+  .comment .like__btn-icon
+    width: 18px
+    background-position-y: 6px
+  .favorites .like__btn-icon
+    background-position-y: 2px
+    width: 18px
+  

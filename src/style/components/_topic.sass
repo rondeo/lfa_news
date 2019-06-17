@@ -9,13 +9,13 @@
     font-size: 2.2rem
     line-height: 0
     color: #1d1d1d
-    margin-bottom: 35px
+    margin-bottom: 30px
     font-weight: 700
   &__item
     display: block
     border-bottom: 1px solid #e8e8e8
-    padding-bottom: 48px
-    margin-bottom: 25px
+    padding-bottom: 42px
+    margin-bottom: 23px
     &-subtitle
       font-size: 1.4rem
       margin-bottom: 10px
@@ -63,3 +63,14 @@
   background-image: url('../img/svg/comment.svg')
   width: 21px
   background-position-y: 4px
+
+@media screen and (max-width: 576px)
+  .topic
+    padding: 34px 25px 30px
+    &__title
+      font-size: 1.8rem
+    &__item
+      &-subtitle
+        font-size: 1.2rem
+      &-title
+        font-size: 1.5rem
