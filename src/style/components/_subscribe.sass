@@ -1,32 +1,38 @@
 .subscribe
-	padding: 55px 20px 58px
-	background-color: #f4f4f4
-	box-shadow: 0px 2px 8px 0 rgba(0, 0, 0, 0.11)
-	border: 1px solid #d5ad5d
-	margin: 0
-	display: flex
-	align-items: center
-	justify-content: space-between
-	&__title
-		font-size: 2.2rem
-		color: #1d1d1d
-		font-weight: 700
-		max-width: 460px
-		padding: 0
-		text-align: left
-		margin-right: 15px
-		&-highlight
-			text-transform: uppercase
-	&__btn button
-		background-color: inherit
-		border: 1px solid #ed1c24
-		padding: 9px 30px
-		font-size: 1.6rem
-		color: #ed1c24
+  padding: 55px 20px 58px
+  background-color: #f4f4f4
+  box-shadow: 0px 2px 8px 0 rgba(0, 0, 0, 0.11)
+  border: 1px solid #d5ad5d
+  margin: 0
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &__title
+    font-size: 2.2rem
+    color: #1d1d1d
+    font-weight: 700
+    max-width: 460px
+    padding: 0
+    text-align: left
+    margin-right: 15px
+    &-highlight
+      text-transform: uppercase
+  &__btn button
+    background-color: inherit
+    border: 1px solid #ed1c24
+    padding: 9px 30px
+    font-size: 1.6rem
+    color: #ed1c24
 @media screen and (max-width: 576px) 
   .subscribe
-  	&__title
-  		font-size: 1.2rem
+    flex-wrap: wrap
+    justify-content: center
+    padding-top: 30px
+    padding-bottom: 30px
+    &__title
+      font-size: 1.6rem
+      width: 100%
+      text-align: center
+      margin-bottom: 25px
     &__btn button
-			font-size: 1.2rem
-			display: none
+      font-size: 1.5rem
