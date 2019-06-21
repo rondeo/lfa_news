@@ -8,6 +8,12 @@
     a
       color: #8c8c8c
       text-decoration: none
+    button
+      display: block
+      border: none
+      background-color: inherit
+      color: #8c8c8c
+      padding-bottom: 6px                          
   &__btns
     float: left
     display: flex
@@ -15,20 +21,22 @@
     margin-right: 0
   &__btn
     margin-right: 15px
+    transition: 0.3s
+    min-height: 30px
     &-icon
       float: left
-      width: 25px
       height: 100%
       background-repeat: no-repeat
       background-position: center
       margin-right: 5px
+      transition: 0.3s
     &-count
       float: left
       padding-top: 2px
-
+  &__right
+    position: relative
   &__share
     float: right
-    
     &-note
       float: left
       margin-right: 10px
@@ -41,22 +49,78 @@
       background-repeat: no-repeat
       background-position-y: 0px
       background-image: url('../img/svg/share.svg')
+  &__social
+    &-disabled
+      display: none
+    &-active
+      display: flex
+      justify-content: space-between
+      align-items: center
+      flex-wrap: nowrap
+      content: ''
+      position: absolute
+      right: -20px
+      top: -62px
+      background-color: #fff
+      box-shadow: 0px 2px 8px 3px rgba(0, 0, 0, 0.11)
+      padding: 14px 22px 13px
+      .like__btn-icon
+        margin-right: 0
+    &-item
+      margin-right: 5px
+    &-fb
+      margin-right: 20px
+      .like__btn-icon
+        background-image: url('../img/svg/FB.svg')
+        height: 23px
+        width: 13px
+        
+    &-vk
+      margin-right: 18px
+      .like__btn-icon
+        background-image: url('../img/svg/VK.svg')
+        height: 20px
+        width: 29px
+        
+    &-twitter
+      margin-right: 15px
+      .like__btn-icon
+        background-image: url('../img/svg/twitter.svg')
+        height: 28px
+        width: 26px
+        
+    &-inst
+      margin-right: 0px
+      .like__btn-icon
+        background-image: url('../img/svg/insta.svg')
+        height: 24px
+        width: 24px
 
 .view .like__btn-icon
   background-image: url('../img/svg/impression-artcl-footer.svg')
   background-position-y: 7px
+  width: 25px
+
 .like .like__btn-icon
   background-image: url('../img/svg/like-artcl-footer.svg')
-  background-position-y: 0px
+  background-position-y: -1px
   width: 23px
+  height: 20px
+
 .comment .like__btn-icon
   background-image: url('../img/svg/comment-artcl-footer.svg')
   width: 21px
   background-position-y: 6px
+
 .favorites .like__btn-icon
   background-image: url('../img/svg/favorites-artcl-footer.svg')
-  background-position-y: 2px
+  background-position-y: 1px
   width: 19px
+  height: 20px
+  margin-right: 0
+
+.favorites
+  margin-right: 0
 
 .blind-label
   content: ''
@@ -65,6 +129,7 @@
   height: 1px
   width: 1px
   font-size: 0.1rem
+  top: 10px
 
 @media screen and (max-width: 576px)
   .like
@@ -92,5 +157,35 @@
     width: 18px
     background-position-y: 6px
   .favorites .like__btn-icon
-    background-position-y: 2px
+    background-position-y: 3px
     width: 18px
+
+/*animation*/
+.like:hover .like__btn-icon, .like__active
+  background-image: url('../img/svg/like-artcl-footer-hover.svg')
+
+.comment:hover .like__btn-icon
+  background-image: url('../img/svg/comment-artcl-footer-hover.svg')
+
+.favorites:hover .like__btn-icon, .like__active
+  background-image: url('../img/svg/favorites-artcl-footer-hover.svg')
+
+.like:active .like__btn-icon, .comment:active .like__btn-icon, .favorites:active .like__btn-icon
+  transform: scale(1.1,1.1)
+  outline: none
+
+.like__btn:hover .like__btn-icon, .like__btn:hover
+  color: #c49f55
+  transition: 0.3s
+
+.view:hover
+  color: #8c8c8c
+
+.like__share:hover
+  color: #c49f55
+  
+.like__share:hover .like__share-icon
+  background-image: url('../img/svg/share-hover.svg')
+
+.like__share:active, .like:active, .comment:active, .favorites:active
+  color: #a78749

@@ -11,7 +11,7 @@
   <body>
     <div class="page-wrapper">
       <div class="row justify-content-md-center">
-        <div class="content-area legislation col-lg-7 col-md-8 col-sm-12 col-12">
+        <div class="content-area feed legislation col-lg-7 col-md-8 col-sm-12 col-12">
           <div class="content">
             <div class="content__item">
               //= templates/post.html
@@ -37,9 +37,21 @@
               //= templates/company-box.html
             </div>
             <div class="content__item">
+              <div class="mobile__banner">
+                <a href="#" class="mobile__banner-link">
+                  <picture class="mobile__banner-img">
+                    <source srcset="img/Banner-live-240х400.png" media="(min-width: 600px)" />
+                    <img src="img/Banner-live-240х400.png" alt="Прямая трансляция ПМЮФ 2019" />
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <div class="content__item">
               //= templates/post.html
             </div>
-            <a href="#" class="feed__more">Больше новостей</a>
+            <div class="feed__more">
+              <a href="#" class="feed__more-btn">Больше новостей</a>
+            </div>
           </div>
         </div>
         //= templates/widget.html

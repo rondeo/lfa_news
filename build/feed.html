@@ -11,7 +11,7 @@
   <body>
     <div class="page-wrapper">
       <div class="row justify-content-md-center">
-        <div class="content-area legislation col-lg-7 col-md-8 col-sm-12 col-12">
+        <div class="content-area feed legislation col-lg-7 col-md-8 col-sm-12 col-12">
           <div class="content">
             <div class="content__item">
               <article class="post">
@@ -36,8 +36,8 @@
                       АС Московского округа исправляет ошибки: самые интересные дела за март
                     </h2>
                     </a>
-                    <span class="post_low-area">
-                      арбитражный процесс, подборка, вексель
+                    <span class="post__low-area">
+                      <a href="#" class="article__low-link">арбитражный процесс</a>, <a href="#" class="article__low-link">подборка</a>, <a href="#" class="article__low-link">вексель</a>
                     </span>
                     <p class="post__description">
                       Должник добивался отзыва исполлиста, потому что думал, что он противоречит
@@ -52,6 +52,45 @@
                       <img src="img/intro_background.jpg">
                     </div>
                     <a href="index.html" class="post__link">Читать далее</a>
+                    <div class="author-wrap author-mobile">
+                      <!-- <div class="author">
+                        <div class="author__logo">
+                          <img
+                            src="https://randomuser.me/api/portraits/men/46.jpg"
+                            alt=""
+                            class="author__logo-img"
+                          />
+                        </div>
+                        <a href="#" class="author__info">
+                          <span class="author__name word-wrap">
+                            Евгения Ефименко,
+                          </span>
+                          <span class="author__position">
+                            автор портала pravo.ru
+                          </span>
+                        </a>
+                        
+                                </div> -->
+              
+                      <div class="author author--company">
+                        <div class="author__logo">
+                          <img
+                            src="img/author_logo.png"
+                            alt=""
+                            class="author__logo-img"
+                          />
+                        </div>
+                        <a href="#" class="author__info">
+                          <span class="author__name word-wrap">
+                            Евгения Ефименко,
+                          </span>
+                          <span class="author__position">
+                            автор портала pravo.ru
+                          </span>
+                        </a>
+                        
+                      </div>
+                    </div>
                   </header>
                   <footer class="post__footer row justify-content-sd-center">
                     <div class="post__footer-btns col-lg-5 col-md-5 col-sd-12">
@@ -72,30 +111,34 @@
                       </a>
                     </div>
                     <div class="author-wrap col-lg-7 col-md-7 col-sd-12">
-                      <div class="author">
-                        <!-- <div class="author__info">
-                          <span class="word-wrap">
-                            Евгения Ефименко,
+                      <!-- <div class="author">
+                        <a href="#" class="author__info">
+                          <span class="author__name word-wrap">
+                          Евгения Ефименко,
                           </span>
-                          автор портала pravo.ru
-                        </div>
-                        <div class="author__logo">
+                          <span class="author__position">
+                            автор портала pravo.ru
+                          </span>
+                        </a>
+                        <a href="#" class="author__logo">
                           <img
                             src="https://randomuser.me/api/portraits/men/46.jpg"
                             alt=""
                             class="author__logo-img"
                           />
-                        </div>
+                        </a>
                                 </div> -->
               
                       <div class="author author--company">
                         
-                        <div class="author__info">
-                          <span class="word-wrap">
+                        <a href="#" class="author__info">
+                          <span class="author__name word-wrap">
                             Евгения Ефименко,
                           </span>
-                          автор портала pravo.ru
-                        </div>
+                          <span class="author__position">
+                            автор портала pravo.ru
+                          </span>
+                        </a>
                         <div class="author__logo">
                           <img
                             src="img/author_logo.png"
@@ -116,30 +159,32 @@
                     <h3 class="comment-box__title">Сейчас комментируют</h3>
                     <div class="comment-box__header-icon"></div>
                   </div>
-                  <a href="#" class="comment-box__item row justify-content-sd-center">
-                    <p class="comment-box__link col-lg-5 col-md-5 col-sd-12">Летняя стажировка для студентов</p>
-                    <div class="comment-box__note col-lg-7 col-md-7 col-sd-12">
-                      <p class="comment-box__count proffesion-text">54</p>
-                      <div class="comment-box__icon"></div>
-                      <p class="comment-box__text">«Совершенно верно говорите, но разв...»</p>
-                    </div>
-                  </a>
-                  <a href="#" class="comment-box__item row justify-content-sd-center">
-                    <p class="comment-box__link col-lg-5 col-md-5 col-sd-12">Адвокат по уголовным делам рассказал об эмоциональных трудностях</p>
-                    <div class="comment-box__note col-lg-7 col-md-7 col-sd-12">
-                      <p class="comment-box__count proffesion-text">97</p>
-                      <div class="comment-box__icon"></div>
-                      <p class="comment-box__text">«а вы уверены, что такой подход разв...»</p>
-                    </div>
-                  </a>
-                  <a href="#" class="comment-box__item row justify-content-sd-center">
-                    <p class="comment-box__link col-lg-5 col-md-5 col-sd-12">«Право интеллектуальной собственности»</p>
-                    <div class="comment-box__note col-lg-7 col-md-7 col-sd-12">
-                      <p class="comment-box__count legal-education-text">156</p>
-                      <div class="comment-box__icon"></div>
-                      <p class="comment-box__text">«Курс – бомба!»</p>
-                    </div>
-                  </a>
+                  <div class="comment-box__items">
+                    <a href="#" class="comment-box__item row justify-content-sd-center">
+                      <p class="comment-box__link col-lg-5 col-md-5 col-sd-12">Летняя стажировка для студентов</p>
+                      <div class="comment-box__note col-lg-7 col-md-7 col-sd-12">
+                        <p class="comment-box__count proffesion-text">54</p>
+                        <div class="comment-box__icon"></div>
+                        <p class="comment-box__text">«Совершенно верно говорите, но разв...»</p>
+                      </div>
+                    </a>
+                    <a href="#" class="comment-box__item row justify-content-sd-center">
+                      <p class="comment-box__link col-lg-5 col-md-5 col-sd-12">Адвокат по уголовным делам рассказал об эмоциональных трудностях</p>
+                      <div class="comment-box__note col-lg-7 col-md-7 col-sd-12">
+                        <p class="comment-box__count proffesion-text">97</p>
+                        <div class="comment-box__icon"></div>
+                        <p class="comment-box__text">«а вы уверены, что такой подход разв...»</p>
+                      </div>
+                    </a>
+                    <a href="#" class="comment-box__item row justify-content-sd-center">
+                      <p class="comment-box__link col-lg-5 col-md-5 col-sd-12">«Право интеллектуальной собственности»</p>
+                      <div class="comment-box__note col-lg-7 col-md-7 col-sd-12">
+                        <p class="comment-box__count legal-education-text">156</p>
+                        <div class="comment-box__icon"></div>
+                        <p class="comment-box__text">«Курс – бомба!»</p>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </article>
             </div>
@@ -166,8 +211,8 @@
                       АС Московского округа исправляет ошибки: самые интересные дела за март
                     </h2>
                     </a>
-                    <span class="post_low-area">
-                      арбитражный процесс, подборка, вексель
+                    <span class="post__low-area">
+                      <a href="#" class="article__low-link">арбитражный процесс</a>, <a href="#" class="article__low-link">подборка</a>, <a href="#" class="article__low-link">вексель</a>
                     </span>
                     <p class="post__description">
                       Должник добивался отзыва исполлиста, потому что думал, что он противоречит
@@ -182,6 +227,45 @@
                       <img src="img/intro_background.jpg">
                     </div>
                     <a href="index.html" class="post__link">Читать далее</a>
+                    <div class="author-wrap author-mobile">
+                      <!-- <div class="author">
+                        <div class="author__logo">
+                          <img
+                            src="https://randomuser.me/api/portraits/men/46.jpg"
+                            alt=""
+                            class="author__logo-img"
+                          />
+                        </div>
+                        <a href="#" class="author__info">
+                          <span class="author__name word-wrap">
+                            Евгения Ефименко,
+                          </span>
+                          <span class="author__position">
+                            автор портала pravo.ru
+                          </span>
+                        </a>
+                        
+                                </div> -->
+              
+                      <div class="author author--company">
+                        <div class="author__logo">
+                          <img
+                            src="img/author_logo.png"
+                            alt=""
+                            class="author__logo-img"
+                          />
+                        </div>
+                        <a href="#" class="author__info">
+                          <span class="author__name word-wrap">
+                            Евгения Ефименко,
+                          </span>
+                          <span class="author__position">
+                            автор портала pravo.ru
+                          </span>
+                        </a>
+                        
+                      </div>
+                    </div>
                   </header>
                   <footer class="post__footer row justify-content-sd-center">
                     <div class="post__footer-btns col-lg-5 col-md-5 col-sd-12">
@@ -202,30 +286,34 @@
                       </a>
                     </div>
                     <div class="author-wrap col-lg-7 col-md-7 col-sd-12">
-                      <div class="author">
-                        <!-- <div class="author__info">
-                          <span class="word-wrap">
-                            Евгения Ефименко,
+                      <!-- <div class="author">
+                        <a href="#" class="author__info">
+                          <span class="author__name word-wrap">
+                          Евгения Ефименко,
                           </span>
-                          автор портала pravo.ru
-                        </div>
-                        <div class="author__logo">
+                          <span class="author__position">
+                            автор портала pravo.ru
+                          </span>
+                        </a>
+                        <a href="#" class="author__logo">
                           <img
                             src="https://randomuser.me/api/portraits/men/46.jpg"
                             alt=""
                             class="author__logo-img"
                           />
-                        </div>
+                        </a>
                                 </div> -->
               
                       <div class="author author--company">
                         
-                        <div class="author__info">
-                          <span class="word-wrap">
+                        <a href="#" class="author__info">
+                          <span class="author__name word-wrap">
                             Евгения Ефименко,
                           </span>
-                          автор портала pravo.ru
-                        </div>
+                          <span class="author__position">
+                            автор портала pravo.ru
+                          </span>
+                        </a>
                         <div class="author__logo">
                           <img
                             src="img/author_logo.png"
@@ -270,8 +358,8 @@
                       АС Московского округа исправляет ошибки: самые интересные дела за март
                     </h2>
                     </a>
-                    <span class="post_low-area">
-                      арбитражный процесс, подборка, вексель
+                    <span class="post__low-area">
+                      <a href="#" class="article__low-link">арбитражный процесс</a>, <a href="#" class="article__low-link">подборка</a>, <a href="#" class="article__low-link">вексель</a>
                     </span>
                     <p class="post__description">
                       Должник добивался отзыва исполлиста, потому что думал, что он противоречит
@@ -286,6 +374,45 @@
                       <img src="img/intro_background.jpg">
                     </div>
                     <a href="index.html" class="post__link">Читать далее</a>
+                    <div class="author-wrap author-mobile">
+                      <!-- <div class="author">
+                        <div class="author__logo">
+                          <img
+                            src="https://randomuser.me/api/portraits/men/46.jpg"
+                            alt=""
+                            class="author__logo-img"
+                          />
+                        </div>
+                        <a href="#" class="author__info">
+                          <span class="author__name word-wrap">
+                            Евгения Ефименко,
+                          </span>
+                          <span class="author__position">
+                            автор портала pravo.ru
+                          </span>
+                        </a>
+                        
+                                </div> -->
+              
+                      <div class="author author--company">
+                        <div class="author__logo">
+                          <img
+                            src="img/author_logo.png"
+                            alt=""
+                            class="author__logo-img"
+                          />
+                        </div>
+                        <a href="#" class="author__info">
+                          <span class="author__name word-wrap">
+                            Евгения Ефименко,
+                          </span>
+                          <span class="author__position">
+                            автор портала pravo.ru
+                          </span>
+                        </a>
+                        
+                      </div>
+                    </div>
                   </header>
                   <footer class="post__footer row justify-content-sd-center">
                     <div class="post__footer-btns col-lg-5 col-md-5 col-sd-12">
@@ -306,30 +433,34 @@
                       </a>
                     </div>
                     <div class="author-wrap col-lg-7 col-md-7 col-sd-12">
-                      <div class="author">
-                        <!-- <div class="author__info">
-                          <span class="word-wrap">
-                            Евгения Ефименко,
+                      <!-- <div class="author">
+                        <a href="#" class="author__info">
+                          <span class="author__name word-wrap">
+                          Евгения Ефименко,
                           </span>
-                          автор портала pravo.ru
-                        </div>
-                        <div class="author__logo">
+                          <span class="author__position">
+                            автор портала pravo.ru
+                          </span>
+                        </a>
+                        <a href="#" class="author__logo">
                           <img
                             src="https://randomuser.me/api/portraits/men/46.jpg"
                             alt=""
                             class="author__logo-img"
                           />
-                        </div>
+                        </a>
                                 </div> -->
               
                       <div class="author author--company">
                         
-                        <div class="author__info">
-                          <span class="word-wrap">
+                        <a href="#" class="author__info">
+                          <span class="author__name word-wrap">
                             Евгения Ефименко,
                           </span>
-                          автор портала pravo.ru
-                        </div>
+                          <span class="author__position">
+                            автор портала pravo.ru
+                          </span>
+                        </a>
                         <div class="author__logo">
                           <img
                             src="img/author_logo.png"
@@ -366,7 +497,7 @@
                         <div class="company-box__author-icon"></div>
                         <p class="company-box__author-name">pravo.ru – новости права</p>
                       </div>
-                      <p class="company-box__name">Летняя стажировка для студентов</p>
+                      <p class="company-box__name">Адвокат по уголовным делам рассказал об эмоциональных трудностях</p>
                       <p class="company-box__description">Если Вы студент 4 курса или проходите обучение...</p>
                     </div>
                     <div class="company-box__btn col-lg-2 col-md-2 col-sd-4">
@@ -379,7 +510,7 @@
                         <div class="company-box__author-icon"></div>
                         <p class="company-box__author-name">pravo.ru – новости права</p>
                       </div>
-                      <p class="company-box__name">Летняя стажировка для студентов</p>
+                      <p class="company-box__name">Заемщики получили право на ипотечные каникулы</p>
                       <p class="company-box__description">Если Вы студент 4 курса или проходите обучение...</p>
                     </div>
                     <div class="company-box__btn col-lg-2 col-md-2 col-sd-4">
@@ -388,6 +519,16 @@
                   </div>
                 </div>
               </article>
+            </div>
+            <div class="content__item">
+              <div class="mobile__banner">
+                <a href="#" class="mobile__banner-link">
+                  <picture class="mobile__banner-img">
+                    <source srcset="img/Banner-live-240х400.png" media="(min-width: 600px)" />
+                    <img src="img/Banner-live-240х400.png" alt="Прямая трансляция ПМЮФ 2019" />
+                  </picture>
+                </a>
+              </div>
             </div>
             <div class="content__item">
               <article class="post">
@@ -412,8 +553,8 @@
                       АС Московского округа исправляет ошибки: самые интересные дела за март
                     </h2>
                     </a>
-                    <span class="post_low-area">
-                      арбитражный процесс, подборка, вексель
+                    <span class="post__low-area">
+                      <a href="#" class="article__low-link">арбитражный процесс</a>, <a href="#" class="article__low-link">подборка</a>, <a href="#" class="article__low-link">вексель</a>
                     </span>
                     <p class="post__description">
                       Должник добивался отзыва исполлиста, потому что думал, что он противоречит
@@ -428,6 +569,45 @@
                       <img src="img/intro_background.jpg">
                     </div>
                     <a href="index.html" class="post__link">Читать далее</a>
+                    <div class="author-wrap author-mobile">
+                      <!-- <div class="author">
+                        <div class="author__logo">
+                          <img
+                            src="https://randomuser.me/api/portraits/men/46.jpg"
+                            alt=""
+                            class="author__logo-img"
+                          />
+                        </div>
+                        <a href="#" class="author__info">
+                          <span class="author__name word-wrap">
+                            Евгения Ефименко,
+                          </span>
+                          <span class="author__position">
+                            автор портала pravo.ru
+                          </span>
+                        </a>
+                        
+                                </div> -->
+              
+                      <div class="author author--company">
+                        <div class="author__logo">
+                          <img
+                            src="img/author_logo.png"
+                            alt=""
+                            class="author__logo-img"
+                          />
+                        </div>
+                        <a href="#" class="author__info">
+                          <span class="author__name word-wrap">
+                            Евгения Ефименко,
+                          </span>
+                          <span class="author__position">
+                            автор портала pravo.ru
+                          </span>
+                        </a>
+                        
+                      </div>
+                    </div>
                   </header>
                   <footer class="post__footer row justify-content-sd-center">
                     <div class="post__footer-btns col-lg-5 col-md-5 col-sd-12">
@@ -448,30 +628,34 @@
                       </a>
                     </div>
                     <div class="author-wrap col-lg-7 col-md-7 col-sd-12">
-                      <div class="author">
-                        <!-- <div class="author__info">
-                          <span class="word-wrap">
-                            Евгения Ефименко,
+                      <!-- <div class="author">
+                        <a href="#" class="author__info">
+                          <span class="author__name word-wrap">
+                          Евгения Ефименко,
                           </span>
-                          автор портала pravo.ru
-                        </div>
-                        <div class="author__logo">
+                          <span class="author__position">
+                            автор портала pravo.ru
+                          </span>
+                        </a>
+                        <a href="#" class="author__logo">
                           <img
                             src="https://randomuser.me/api/portraits/men/46.jpg"
                             alt=""
                             class="author__logo-img"
                           />
-                        </div>
+                        </a>
                                 </div> -->
               
                       <div class="author author--company">
                         
-                        <div class="author__info">
-                          <span class="word-wrap">
+                        <a href="#" class="author__info">
+                          <span class="author__name word-wrap">
                             Евгения Ефименко,
                           </span>
-                          автор портала pravo.ru
-                        </div>
+                          <span class="author__position">
+                            автор портала pravo.ru
+                          </span>
+                        </a>
                         <div class="author__logo">
                           <img
                             src="img/author_logo.png"
@@ -485,7 +669,9 @@
                 </div>
               </article>
             </div>
-            <a href="#" class="feed__more">Больше новостей</a>
+            <div class="feed__more">
+              <a href="#" class="feed__more-btn">Больше новостей</a>
+            </div>
           </div>
         </div>
         <article class="widget col-lg-3 col-md-4 col-sm-6">

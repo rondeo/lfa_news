@@ -1,10 +1,36 @@
 .feed
   &__more
-    display: block
-    margin: 0 auto
-    text-align: center
-    font-size: 1.8rem
-    color: #c49f55
-    margin-bottom: 80px
-    margin-top: 30px
-    text-decoration: underline
+    display: flex
+    justify-content: center
+    &-btn
+      display: block
+      font-size: 1.8rem
+      color: #c49f55
+      margin-bottom: 80px
+      margin-top: 30px
+      border-bottom: 1px solid #c49f55
+      text-decoration: none
+  .mobile__banner
+    display: none    
+
+@media screen and (max-width: 576px)
+  .feed
+    &__more
+      &-btn
+        font-size: 1.5rem
+        margin-bottom: 40px
+        margin-top: 5px
+        border: 1px solid #c49f55
+        padding-top: 6px
+        padding-bottom: 8px
+        padding-left: 15px
+        padding-right: 15px
+
+    .mobile__banner
+      &-img
+        display: flex
+        justify-content: center
+        flex-flow: column
+        align-items: center
+        & img
+          width: 80%

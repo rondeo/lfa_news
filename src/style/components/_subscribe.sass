@@ -23,6 +23,7 @@
     padding: 9px 30px
     font-size: 1.6rem
     color: #ed1c24
+    transition: 0.3s
 @media screen and (max-width: 576px) 
   .subscribe
     flex-wrap: wrap
@@ -36,3 +37,14 @@
       margin-bottom: 25px
     &__btn button
       font-size: 1.5rem
+
+/*animation*/
+
+.subscribe
+  &__btn button:hover
+    color: #fff
+    background-color: #ed1c24
+    transition: 0.3s
+  &__btn button:active
+    background-color: #ca1920
+

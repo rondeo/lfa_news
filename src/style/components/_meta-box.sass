@@ -3,8 +3,12 @@
   display: flex
   justify-content: space-between
   &__item
+    display: flex
     float: left
-
+    align-items: center
+  &__left
+    display: flex
+    align-items: center
   &__category
     float: left
     position: relative
@@ -14,6 +18,7 @@
     margin-right: 10px
     font-size: 1.4rem
     padding-top: 1px
+    line-height: 1
 
     &-color
       float: left
@@ -23,15 +28,15 @@
       margin-right: 5px
       background-color: #dc291a
 
-  &__btn 
+  &__btn
     cursor: pointer
 
     & button
       background-color: inherit
       border: 1px solid #cdb863
       color: #cdb863
-      padding-top: 4px
-      padding-bottom: 5px
+      padding-top: 3px
+      padding-bottom: 4px
       padding-left: 5px
       padding-right: 5px
       font-size: 1.2rem
@@ -39,6 +44,18 @@
       cursor: pointer
       outline-width: 2px
       outline-color: #cdb863
+      transition: 0.2s
+      display: flex
+      align-items: center
+    &-icon
+      font-size: 1.5rem
+      line-height: 1
+      margin-right: 0
+      padding-top: 1px
+    &-label
+      margin-right: 3px
+
+
       
   &__date
     float: right
@@ -72,3 +89,31 @@
       display: block
     &__btn
       display: none
+
+
+/*animation*/
+
+.meta-box
+  &__category, &__category-color, &__item:hover &__category-color, &__category:hover, &__item:active &__category-color, &__category:active
+    transition: 0.2s
+    text-decoration: none
+  &__item:hover &__category-color, &__category:hover
+    opacity: 0.7
+  &__item:active &__category-color, &__category:active
+    opacity: 0.9
+  &__btn
+    button:hover
+      background-color: #cdb863
+      color: #fff
+      transition: 0.3s
+    button:active
+      opacity: 0.8
+
+      
+
+
+
+  
+
+
+
