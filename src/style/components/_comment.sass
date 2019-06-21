@@ -1,5 +1,5 @@
 .comments
-  padding: 30px 26px 35px
+  padding: 30px 15px 35px
   width: 100%
   background-color: #fff
   box-shadow: 0px 2px 8px 0 rgba(0, 0, 0, 0.11)
@@ -7,36 +7,107 @@
     font-size: 1.6rem
     font-weight: 700
     margin-bottom: 28px
+  
+  &__header
+    width: 100%
+    margin-bottom: 33px
+  &__pseudo
+    &-form
+      width: 100%
+      position: relative
+      z-index: 1
+      background-color: #fff
+      padding: 7px 15px
+      border: 1px solid #dedede
+      border-radius: 2px
+      cursor: pointer
+      &:after
+        content: ''
+        display: table
+        clear: both
+      &__text
+        display: block
+        float: left
+        font-size: 15px
+        line-height: 34px
+        color: #818181
+        white-space: nowrap
+      &__button
+        width: 34px
+        height: 34px
+        float: right
+        text-align: center
+        vertical-align: bottom
+        border-radius: 50%
+        margin-left: 10px
+      &__icon
+        margin-top: 6px
+        margin-right: -2px
+        fill: #8c8c8c
   &__form
-    width: 100%
     position: relative
-    margin-bottom: 35px
-  &__textarea
-    display: block
-    width: 100%
-    height: 57px
-    padding: 17px 20px
-    position: relative
-    font-size: 1.6rem
-    line-height: 1.2
-    resize: none
-    overflow: hidden
-  &__textarea:focus
-    height: 150px
-  &__textarea:focus .comments__submit
-    bottom: 8px
-  &__submit
-    content: ''
-    position: absolute
-    width: 40px
-    height: 40px
-    right: 20px
-    top: 8px
+    padding-top: 15px
+    padding-bottom: 15px
     background-color: #fff
-    border: none
-  &__submit img
-    width: 33px
-    height: 100%  
+    display: flex
+    flex-wrap: nowrap
+    display: none
+    &-possessed
+      display: block
+      width: 42px
+      position: relative
+      z-index: 3
+      &__avatar
+        position: absolute
+        width: 32px
+        height: 32px
+        left: 0
+        top: 0
+        border-radius: 2px
+    &-textarea-holder
+      padding: 15px
+      border: 1px solid #dedede
+      border-radius: 2px
+      -ms-flex-preferred-size: 100%
+      flex-basis: 100%
+    &-textarea
+      width: 100%
+      resize: none
+      display: block
+      margin: 0
+      padding: 0
+      background: #fff
+      border: 0
+      min-height: 80px
+      font-size: 15px
+      line-height: 22px
+      box-sizing: border-box
+      outline: 0!important
+    &-panel
+      height: 34px
+      margin-top: 10px
+    &-reply
+      float: right
+      background-color: #d5ad5d
+      color: #fff
+      cursor: pointer
+      display: inline-flex
+      align-items: center
+      white-space: nowrap
+      justify-content: center
+      height: 34px
+      line-height: 34px
+      font-size: 15px
+      padding: 0 20px
+      border-radius: 4px
+      p
+        margin: 0
+
+    &-btn
+      float: right
+      margin-left: 10px
+      fill: #fff
+
 
   &__list
     width: 100%
@@ -117,9 +188,23 @@
   &__mobile
     &-assessment
       display: none
-
+.comments__visible
+  display: flex
 @media screen and (max-width: 576px)
   .comments
+    &__form
+      padding-bottom: 0
+      padding-top: 0
+      border: 1px solid #dedede
+      &-textarea
+        &-holder
+          border: 0
+    &__pseudo-form
+      display: flex
+      justify-content: space-between
+      &__icon
+        width: 25px
+
     &__item
       &-author
         flex-wrap: wrap

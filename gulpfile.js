@@ -24,7 +24,7 @@ var webp = require("gulp-webp");
 var lost = require("lost");
 var sourcemaps = require("gulp-sourcemaps");
 var mqpacker = require("css-mqpacker");
-
+var svgSprite = require('gulp-svg-sprite');
 
 function isMax(mq) {
   return /max-width/.test(mq);
@@ -97,6 +97,18 @@ gulp.task("images", function () {
     .pipe(gulp.dest("build/img"));
 });
 
+gulp.task('svgSprite', function () {
+  return gulp.src('build/img/svg/*.svg') // svg files for sprite
+    .pipe(svgSprite({
+      mode: {
+        stack: {
+          sprite: "../sprite.svg"  //sprite file name
+        }
+      },
+    }
+  ))
+  .pipe(gulp.dest('build/img/svg'));
+});
 //Конвертация в webp
 // gulp.task("webp", function () {
 //   return gulp.src("build/img/**/*.{png,jpg}")
@@ -162,6 +174,7 @@ gulp.task("build", function (done) {
     "copyfont",
     "copyimg",
     "images",
+    "svgSprite",
     // "webp",
     "copyjs",
     "style",

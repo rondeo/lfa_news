@@ -27,6 +27,14 @@ body
 
 .show-desktop
   display: inherit
-
+.hidden
+  display: none
 .active
   display: block
+
+@media (max-width: 1024px) and (min-width: 680px)
+  .lt-hidden
+    display: none
+@media (max-width: 679px)
+  .lm-hidden
+    display: none

@@ -25,6 +25,7 @@ var lost = require("lost");
 var sourcemaps = require("gulp-sourcemaps");
 var mqpacker = require("css-mqpacker");
 var merge = require('merge-stream');
+var svgSprite = require('gulp-svg-sprite');
 
 
 function isMax(mq) {
@@ -96,6 +97,20 @@ gulp.task("images", function () {
       imagemin.svgo()
     ])))
     .pipe(gulp.dest("build/img"));
+});
+
+//svg sprite
+gulp.task('svgSprite', function () {
+  return gulp.src('build/img/svg/*.svg') // svg files for sprite
+    .pipe(svgSprite({
+      mode: {
+        stack: {
+          sprite: "../sprite.svg"  //sprite file name
+        }
+      },
+    }
+  ))
+  .pipe(gulp.dest('build/img/svg'));
 });
 
 //Конвертация в webp

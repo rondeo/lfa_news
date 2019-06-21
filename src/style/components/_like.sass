@@ -1,10 +1,13 @@
 .like
   &__wrap 
-    padding: 18px 28px 42px
+    padding: 18px 28px 20px
     background-color: #f4f4f4
     color: #8c8c8c
     font-size: 1.4rem
     line-height: 2.2rem
+    display: flex
+    justify-content: space-between
+    align-items: center
     a
       color: #8c8c8c
       text-decoration: none
@@ -13,30 +16,33 @@
       border: none
       background-color: inherit
       color: #8c8c8c
-      padding-bottom: 6px                          
+  &__right
+    position: relative                          
   &__btns
     float: left
     display: flex
     justify-content: flex-start
     margin-right: 0
+    align-items: center
   &__btn
     margin-right: 15px
-    transition: 0.3s
+    transition: 0.2s
     min-height: 30px
+    cursor: pointer
+    display: flex
+    align-items: center
     &-icon
       float: left
-      height: 100%
-      background-repeat: no-repeat
-      background-position: center
       margin-right: 5px
-      transition: 0.3s
+      transition: 0.2s
+      cursor: pointer
+      fill: #8c8c8c
     &-count
       float: left
       padding-top: 2px
-  &__right
-    position: relative
   &__share
     float: right
+    outline: none !important
     &-note
       float: left
       margin-right: 10px
@@ -44,16 +50,10 @@
       padding-top: 2px
     &-icon
       float: left
-      width: 23px
-      height: 22px
-      background-repeat: no-repeat
-      background-position-y: 0px
-      background-image: url('../img/svg/share.svg')
+      fill: #8c8c8c
   &__social
-    &-disabled
+    &-wrap
       display: none
-    &-active
-      display: flex
       justify-content: space-between
       align-items: center
       flex-wrap: nowrap
@@ -66,58 +66,32 @@
       padding: 14px 22px 13px
       .like__btn-icon
         margin-right: 0
+        fill: #000
+    &-active
+      display: flex
     &-item
       margin-right: 5px
     &-fb
       margin-right: 20px
-      .like__btn-icon
-        background-image: url('../img/svg/FB.svg')
-        height: 23px
-        width: 13px
-        
     &-vk
       margin-right: 18px
-      .like__btn-icon
-        background-image: url('../img/svg/VK.svg')
-        height: 20px
-        width: 29px
-        
     &-twitter
       margin-right: 15px
-      .like__btn-icon
-        background-image: url('../img/svg/twitter.svg')
-        height: 28px
-        width: 26px
-        
     &-inst
       margin-right: 0px
-      .like__btn-icon
-        background-image: url('../img/svg/insta.svg')
-        height: 24px
-        width: 24px
 
+.view
+  cursor: default
 .view .like__btn-icon
-  background-image: url('../img/svg/impression-artcl-footer.svg')
-  background-position-y: 7px
-  width: 25px
-
+  margin-top: 3px
 .like .like__btn-icon
-  background-image: url('../img/svg/like-artcl-footer.svg')
-  background-position-y: -1px
-  width: 23px
-  height: 20px
+  margin-top: -3px
 
 .comment .like__btn-icon
-  background-image: url('../img/svg/comment-artcl-footer.svg')
-  width: 21px
-  background-position-y: 6px
+  margin-top: 6px
 
 .favorites .like__btn-icon
-  background-image: url('../img/svg/favorites-artcl-footer.svg')
-  background-position-y: 1px
-  width: 19px
-  height: 20px
-  margin-right: 0
+  margin-top: 1px
 
 .favorites
   margin-right: 0
@@ -161,31 +135,31 @@
     width: 18px
 
 /*animation*/
-.like:hover .like__btn-icon, .like__active
-  background-image: url('../img/svg/like-artcl-footer-hover.svg')
-
-.comment:hover .like__btn-icon
-  background-image: url('../img/svg/comment-artcl-footer-hover.svg')
-
-.favorites:hover .like__btn-icon, .like__active
-  background-image: url('../img/svg/favorites-artcl-footer-hover.svg')
 
 .like:active .like__btn-icon, .comment:active .like__btn-icon, .favorites:active .like__btn-icon
-  transform: scale(1.1,1.1)
+  transform: scale(1.2,1.2)
   outline: none
 
-.like__btn:hover .like__btn-icon, .like__btn:hover
+.like__btn:hover, .like__share:hover
   color: #c49f55
-  transition: 0.3s
+  transition: 0.2s
+.like__btn:hover .like__btn-icon, .like__share:hover .like__share-icon
+  fill: #c49f55
+  transition: 0.2s
 
 .view:hover
   color: #8c8c8c
+.view:hover .like__btn-icon
+  fill: #8c8c8c
 
 .like__share:hover
   color: #c49f55
-  
-.like__share:hover .like__share-icon
-  background-image: url('../img/svg/share-hover.svg')
 
 .like__share:active, .like:active, .comment:active, .favorites:active
   color: #a78749
+
+.like__btn-active
+  .like__btn-count
+    color: #c49f55
+  .like__btn-icon
+    fill: #c49f55

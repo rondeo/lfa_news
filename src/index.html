@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/main.min.css" />
     <title>Document</title>
   </head>
@@ -35,5 +36,36 @@
         //= templates/widget.html
       </div>
     </div>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.comments__pseudo-form').click(function (){
+          $(this).addClass('hidden');
+          $('.comments__form').addClass('comments__visible');
+          $('.comments__form-textarea').focus();
+        });
+        $('.comment').click(function (){
+          $('.comments__pseudo-form').addClass('hidden');
+          $('.comments__form').addClass('comments__visible');
+          $('.comments__form-textarea').focus();
+        });
+        $('.like').click(function (){
+          $(this).toggleClass('like__btn-active');
+        });
+        $('.favorites').click(function (){
+          $(this).toggleClass('like__btn-active');
+        });
+        $('.like__share').click(function (){
+          $('.like__social-wrap').fadeToggle(200).css("display", "flex");
+        });
+        $('a[href*=#]').bind("click", function(e){
+          var anchor = $(this);
+          $('html, body').animate({
+            scrollTop: $(anchor.attr('href')).offset().top - 
+          }, 1000);
+          e.preventDefault();
+        });
+        return false;
+      });
+    </script>
   </body>
 </html>

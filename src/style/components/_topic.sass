@@ -45,27 +45,21 @@
 
   &__btn
     margin-right: 15px
+    display: flex
+    align-items: center
     &-icon
       float: left
-      width: 27px
-      height: 100%
       background-repeat: no-repeat
       background-position: center
       margin-right: 7px
+      fill: #d8d8d8
     &-count
       float: left
 
-.view .topic__btn-icon
-  background-image: url('../img/svg/impression.svg')
-  background-position-y: 5px
 .like .topic__btn-icon
-  background-image: url('../img/svg/like.svg')
-  background-position-y: 0px
-  width: 23px
+  margin-top: -4px
 .comment .topic__btn-icon
-  background-image: url('../img/svg/comment.svg')
-  width: 21px
-  background-position-y: 4px
+  margin-top: 4px
 
 @media screen and (max-width: 576px)
   .topic

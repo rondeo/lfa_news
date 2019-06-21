@@ -2,13 +2,29 @@
   <div class="comments__title">
     <p><span id="articleNumComments" class="comments_title-amount">6</span> Комментарии</p>
   </div>
-  <div class="comments__form">
-    <form class="form fv-form fv-form-bootstrap">
-      <textarea class="comments__textarea" placeholder="Оставьте комментарий" rows="1" cols="60"></textarea>
-      <button class="comments__submit">
-        <img src="img/svg/send.svg">
-      </button>
-    </form>
+  <div class="comments__header">
+    <div class="comments__form comments__form-user_logged_in">
+      <div class="comments__form-possessed lm-hidden lt-hidden">
+        <img class="comments__form-possessed__avatar comments__form-user_image" src="https://leonardo.osnova.io/f05a71e9-658f-3f81-69bf-f091b962112c/-/scale_crop/64x64/center/-/format/webp/">
+      </div>
+      <div class="comments__form-textarea-holder">
+        <textarea class="comments__form-textarea" air-key="comments_add_comment" air-change="comments_input_comment" placeholder="Написать комментарий..."></textarea>
+        <div class="comments__form-panel">
+
+          <div class="comments__form-reply">
+            <p>Отправить</p>
+            <div class="comments__form-btn">
+              <svg class="comments_form-btn__icon" width="22" height="16" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/sprite.svg#send"></use></svg> 
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="comments__pseudo-form">
+        <span class="comments__pseudo-form__text">Написать комментарий...</span>
+        <div class="comments__pseudo-form__button"><svg class="comments__pseudo-form__icon" width="33" height="24" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/sprite.svg#send"></use></svg> </div>
+    </div>
   </div>
   <div class="comments__list">
     <div class="comments__item folder">
